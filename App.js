@@ -10,6 +10,10 @@ import BasketScreen from "./screens/BasketScreen";
 import PreparingOrderScreen from "./screens/PreparingOrderScreen";
 import DeliveryScreen from "./screens/DeliveryScreen";
 const Stack = createNativeStackNavigator();
+import { LogBox } from 'react-native';
+LogBox.ignoreLogs([
+  "Overwriting fontFamily style attribute preprocessor"
+]);
 
 export default function App() {
   return (
